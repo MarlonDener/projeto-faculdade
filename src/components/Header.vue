@@ -9,9 +9,9 @@
       <b-navbar-nav class="ml-auto">
         <b-nav-item href="#">Home</b-nav-item>
         <b-nav-item href="#">Contato</b-nav-item>      
-        <b-nav-item href="#">Sobre</b-nav-item>  
+        <b-nav-item href="#" class="mr-2">Sobre</b-nav-item>  
         <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2 ml-2" placeholder="Pesquisar"></b-form-input>
+          <b-form-input size="sm" class="mr-sm-2" placeholder="Pesquisar"></b-form-input>
           <b-button size="sm" class="my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></b-button>
         </b-nav-form>            
       </b-navbar-nav>
