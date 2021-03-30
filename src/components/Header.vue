@@ -1,6 +1,6 @@
 <template>
   <div>
-<b-navbar toggleable="lg" class="p-3 cor-barra" type="dark" variant="">
+  <b-navbar toggleable="lg" class="p-3 cor-barra" type="dark" variant="">
     <b-navbar-brand href="#" class="logo">NomeSite</b-navbar-brand>
 
     <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
@@ -11,9 +11,11 @@
         <b-nav-item href="#">Contato</b-nav-item>      
         <b-nav-item href="#" class="mr-2">Sobre</b-nav-item>  
         <b-nav-form>
-          <b-form-input size="sm" class="mr-sm-2" placeholder="Pesquisar"></b-form-input>
-          <b-button size="sm" class="my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></b-button>
-        </b-nav-form>            
+          <b-form-input size="md" class="mr-sm-2" placeholder="Pesquisar"></b-form-input>
+          <b-button size="md" class="my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></b-button>
+        </b-nav-form>   
+        <b-button variant="danger" class="ml-2">Login</b-button>
+                     
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>   
