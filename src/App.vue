@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <Header />
+    <PageHome />
     <router-view></router-view>
   </div>
 </template>
@@ -19,4 +20,5 @@ export default {
   margin: 0px;
   box-sizing: border-box;
 }
+
 </style>
