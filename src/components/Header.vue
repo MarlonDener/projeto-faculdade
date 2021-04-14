@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" class="p-3 cor-barra" type="dark" variant="">
-      <b-navbar-brand href="#" class="logo">NomeSite</b-navbar-brand>
+      <b-navbar-brand href="#" class="logo">GameClub</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
