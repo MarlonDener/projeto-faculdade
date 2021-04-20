@@ -7,7 +7,27 @@
     </slide>
     <slide>
        <div class="imagem">
-       <img src="/imagens/img2.jpeg">
+       <img src="/imagens/img2.jpg">
+       </div>
+    </slide>
+    <slide>
+       <div class="imagem">
+       <img src="/imagens/img3.jpeg">
+       </div>
+    </slide>
+    <slide>
+       <div class="imagem">
+       <img src="/imagens/img4.jpeg">
+       </div>
+    </slide>
+    <slide>
+       <div class="imagem">
+       <img src="/imagens/img7.jpg">
+       </div>
+    </slide>
+    <slide>
+       <div class="imagem">
+       <img src="/imagens/img5.jpg">
        </div>
     </slide>
       <hooper-pagination slot="hooper-addons"></hooper-pagination>
