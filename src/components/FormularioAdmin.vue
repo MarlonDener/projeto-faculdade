@@ -38,14 +38,15 @@
 
 
 <script>
-//import firebase from 'firebase/app'
+import firebase from 'firebase/app'
 import dbfirebase from '../firebase/db.js'
 export default {
   data(){
     return{
       dadosNoticias: {
         titulo: '',
-        textoNoticia: ''
+        textoNoticia: '',
+        dataPublicacao: firebase.firestore.FieldValue.serverTimestamp()
       }
     }
   },

@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-navbar toggleable="lg" class="p-3 cor-barra" type="dark" variant="">
-      <b-navbar-brand href="#" class="logo">GamesClub</b-navbar-brand>
+      <b-navbar-brand href="#" class="logo"><img class="imageLogo" src="/imagens/logoOriginal.png" />GamesClub</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
@@ -64,5 +64,17 @@ export default {
   background-color: #141414 !important;
   color: #fff;
   opacity: 0.9;
+}
+.imageLogo{
+  padding:0 1px;
+  width: 87px;
+  position: relative;
+  top:-5px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 </style>
