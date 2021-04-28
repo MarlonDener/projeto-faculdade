@@ -2,9 +2,14 @@
   <hooper :autoPlay="true" :playSpeed="4000" :infiniteScroll="true" class="hooper">
     <slide>
       <div class="imagem">
+        <img src="/imagens/capasite.jpg">
+      </div>
+    </slide>
+    <slide>
+      <div class="imagem">
         <div class="opacidade"></div>
         <div class="info">
-          <p>Novos jogos disponivels gratuitamente para ps4, veja aqui</p>
+          <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p>
           <a href="#">Ver mais</a>
         </div>
         <img src="/imagens/img13.jpg">
@@ -14,7 +19,7 @@
        <div class="imagem">
         <div class="opacidade"></div>
           <div class="info">
-            <p>Novos jogos disponivels gratuitamente para ps4, veja aqui</p>
+            <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p>
             <a href="#">Ver mais</a>
           </div>
           <img src="/imagens/img2.jpg">
@@ -24,7 +29,7 @@
        <div class="imagem">
           <div class="opacidade"></div>
         <div class="info">
-          <p>Novos jogos disponivels gratuitamente para ps4, veja aqui</p>
+          <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p>
           <a href="#">Ver mais</a>
         </div>
        <img src="/imagens/img9.jpg">
@@ -35,7 +40,7 @@
        <div class="imagem">
       <div class="opacidade"></div>
         <div class="info">
-          <p>Novos jogos disponivels gratuitamente para ps4, veja aqui</p>
+          <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui: </p>
           <a href="#">Ver mais</a>
         </div>
        <img src="/imagens/img11.jpg">
@@ -47,7 +52,7 @@
        <div class="imagem">
           <div class="opacidade"></div>
         <div class="info">
-          <p>Novos jogos disponivels gratuitamente para ps4, veja aqui</p>
+          <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui: </p>
           <a href="#">Ver mais</a>
         </div>
        <img src="/imagens/img14.jpg">
@@ -58,7 +63,7 @@
        <div class="imagem">
         <div class="opacidade"></div>
           <div class="info">
-            <p>Novos jogos disponivels gratuitamente para ps4, veja aqui</p>
+            <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p>
             <a href="#">Ver mais</a>
           </div>      
        <img src="/imagens/img7.jpg">
@@ -95,7 +100,7 @@ export default {
     height: 100%;
   }
   .imagem{
-    height: 70vh;
+    height: 80vh;
      width: 100%;
      position: relative;
      display: flex;
@@ -130,7 +135,7 @@ export default {
   }
   .hooper{
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     outline: none;
     border:none;
   }

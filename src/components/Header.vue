@@ -1,20 +1,15 @@
 <template>
   <div>
     <b-navbar toggleable="lg" class="p-3 cor-barra" type="dark" variant="">
-      <b-navbar-brand href="#" class="logo"><img class="imageLogo" src="/imagens/logoOriginal.png" />GamesClub</b-navbar-brand>
+      <b-navbar-brand href="#" class="logo"><img class="imageLogo" src="/imagens/logot.png" />GamesClub</b-navbar-brand>
 
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#">Home</b-nav-item>
-          <b-nav-item href="#">Contato</b-nav-item>      
-          <b-nav-item href="#" class="mr-2">Sobre</b-nav-item>  
-          <b-nav-form>
-            <b-form-input size="md" class="mr-sm-2" placeholder="Pesquisar"></b-form-input>
-            <b-button size="md" class="my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></b-button>
-          </b-nav-form>   
-          <b-button variant="danger" class="ml-2" v-b-modal.modal-1>Login</b-button>       
+          <b-nav-item class="menu-item-a text-white mr-8" href="#home">Home</b-nav-item>
+          <b-nav-item class="menu-item-a text-white mr-8" href="#contato">Contato</b-nav-item>      
+          <b-nav-item class="menu-item-a text-white mr-8" href="#sobre">Sobre</b-nav-item>          
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>   
@@ -55,7 +50,7 @@ export default {
 
 <style>
 .cor-barra {
-  background-color: #141414 !important;
+  background-color: #111 !important;
 }
 .logo{
   font-family: 'Train One', cursive;
@@ -76,5 +71,11 @@ export default {
   align-items: center;
   justify-content: center;
 
+}
+.menu-item-a{
+  color:#fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  margin:0 15px;
 }
 </style>

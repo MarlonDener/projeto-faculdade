@@ -20,7 +20,20 @@ export default {
   box-sizing: border-box;
 }
 html,body{
-background:#000;
+background:#111;
+scroll-behavior: smooth;
+}
+html::-webkit-scrollbar{
+  width:16px;
+}
+html::-webkit-scrollbar-track{
+    background: rgb(32, 32, 32);
+}
+html::-webkit-scrollbar-thumb{
+  background: rebeccapurple;
 }
 
+body{
+  overflow-x: hidden;
+}
 </style>
