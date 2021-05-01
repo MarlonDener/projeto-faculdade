@@ -46,7 +46,8 @@ export default {
       dadosNoticias: {
         titulo: '',
         textoNoticia: '',
-        dataPublicacao: firebase.firestore.FieldValue.serverTimestamp()
+        dataPublicacao: firebase.firestore.FieldValue.serverTimestamp(),
+        id_noticia: '',
       }
     }
   },
@@ -54,6 +55,13 @@ export default {
     enviarDados(){
       console.log(`${this.dadosNoticias.titulo} - ${this.dadosNoticias.textoNoticia}`)
       dbfirebase.collection("noticias").add(this.dadosNoticias)
+      .then((doc) => {
+        dbfirebase.collection("noticias").doc(doc.id)
+        .update({
+          "id_noticia": doc.id
+        })
+      })
+
     }
   }
 }

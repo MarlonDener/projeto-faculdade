@@ -7,7 +7,7 @@
             <div class="card-body d-flex flex-column align-items-center">
                 <h5 class="card-title">{{noticia.titulo}}</h5>
                 <p class="card-text">{{noticia.textoNoticia}}</p>
-                <a href="#" class="btn-roxo">Ler notícia</a>
+                <a href="#" class="btn-roxo" @click="lerNoticia(noticia)">Ler notícia</a>
             </div>
           <div class="card-footer espacamento"> 
             <small class="text-muted">Atualização: {{new Date(noticia.dataPublicacao.seconds * 1000).toLocaleDateString()}}</small>  
@@ -86,6 +86,12 @@ export default{
       })
     })
   },
+  methods: {
+    lerNoticia(noticia){
+      console.log(noticia)
+      this.$router.push({name: 'Noticia', params: {id: noticia.id_noticia }})
+    }
+  }
 }
 </script>
 

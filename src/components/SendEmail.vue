@@ -13,7 +13,7 @@
                             <label for="exampleInputPassword1" class="form-label text-white">Envie a sua mensagem: </label>
                             <textarea class="form-control"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-info botao">Enviar</button>
+                        <button type="submit" class="btn btn-info botao mb-5">Enviar</button>
                     </form>
              </div>
         </div>
