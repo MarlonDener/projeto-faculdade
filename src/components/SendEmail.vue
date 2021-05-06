@@ -3,7 +3,7 @@
         <div class="sendEmail">
             <div class="container">
                     <form id="contato">
-                        <h2>Envie sugestões</h2>
+                        <h2 class="titulo">Contato</h2>
                         <p>Caso tenha um idéia para agregar em nossos serviços, dúvidas, ou algum produto que gostaria de ter, envia a sua mensagem. </p>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label text-white">Informe o seu email: </label>
@@ -26,26 +26,19 @@
 </script>
 
 <style scoped>
-  h2{
-          font-size: 28px;
-          color:rgb(184, 0, 168);
-          text-align: center;
-          text-shadow:2px 3px 5px rgba(204, 17, 204, 0.445);        
-          padding-top:10px;
-      }
+
+
+    .sendEmail{
+        background: rgb(17, 0, 19)
+    }
 
      p{  
           padding:15px 0px;
-          text-align: center;
+          text-align: left;
           color:rgb(216, 216, 216);
           font-size: 15px;
+          font-family: Arial, Helvetica, sans-serif;
     }
-
-.container{
-    border:1px solid rgba(255, 255,255,0.2);
-    box-shadow:4px 3px 7px 3px rgba(255, 255,255,0.1);
-    border-radius: 7px;
-}
 
 .botao{
     width:250px;

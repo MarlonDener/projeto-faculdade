@@ -95,7 +95,7 @@ export default{
 }
 </script>
 
-<style scoped>
+<style>
 .espacamento{
     padding: 10px 3px;
     text-align: right;
@@ -112,6 +112,8 @@ export default{
   align-items: center;
   transition: all 0.9s ease 0s;
   text-decoration: none;
+  border:none;
+  outline: none;
 }
 
 .btn-roxo:hover{
