@@ -89,9 +89,9 @@
 
     .card{
         width:300px;
-        background-color: rgba(255, 255, 255, 0.822);
+        background-color: rgb(19, 19, 19);
         padding:20px 9px;
-        box-shadow: 5px 6px 5px 3px rgba(0,0,0,0.2);
+        box-shadow: 5px 6px 7px 7px rgba(0,0,0,0.5);
         margin:0 auto;
         position: relative;
         border-radius: 5px;
@@ -105,7 +105,7 @@
         color:rgb(136, 4, 4);
     }
     .kong{
-        color:rgb(61, 21, 2);
+        color:rgb(202, 93, 42);
     }
     .sonic{
         color:rgb(18, 9, 138);
@@ -135,6 +135,7 @@
         font-family: Arial, Helvetica, sans-serif;
         padding: 20px 0px;
         font-weight: 500;
+        color:#fff;
     }
 
     .kong_up{

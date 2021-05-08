@@ -18,10 +18,15 @@
                             <label for="exampleInputPassword1" class="form-label">Digite a sua noticia :</label>
                             <textarea class="form-control" id="exampleInputPassword1" v-model="dadosNoticias.textoNoticia"></textarea>
                         </div>
+                        
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Digite o subtitulo da noticia :</label>
+                            <textarea class="form-control" id="exampleInputPassword1" v-model="dadosNoticias.subNoticia"></textarea>
+                        </div>
 
                         <div class="mb-3">
                             <label class="form-label">Imagem da noticia:</label>
-                            <input type="file" class="form-control">
+                            <input v-model="dadosNoticias.linkImagem" type="text" class="form-control">
                         </div>
 
                         <button type="submit" class="btn btn-primary" @click.prevent="enviarDados">Submit</button>
@@ -47,7 +52,9 @@ export default {
         titulo: '',
         textoNoticia: '',
         dataPublicacao: firebase.firestore.FieldValue.serverTimestamp(),
+        linkImagem: '',
         id_noticia: '',
+        subNoticia: ''
       }
     }
   },

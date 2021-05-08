@@ -14,27 +14,11 @@
 
             </div><!--info-->
             <div class="imagem">
-                <img src="/imagens/img12.jpg">
+                <img :src="recebeDados.imagem">
             </div>
             <div class="text-noticia">
                <p> {{ recebeDados.noticia}}</p>
-            
-               <!-- <p>When is a long established fact that a reader will be distracted by 
-                the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                as opposed to using 'Content here, content here', making it look like readable English.
-                It is a long established fact that a reader will be distracted by.
-                </p>
-                <p>
-                The readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                as opposed to using 'Content here, content here', making it look like readable English.
-                It is a long established fact that a reader will be distracted by 
-                the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                as opposed to using 'Content here, content here', making it look like readable English.
-                It is a long established fact that a reader will be distracted by 
-                the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,
-                as opposed to using 'Content here, content here', making it look like readable English.    
-                </p>
-                -->
+
             </div>
 
             <!-- Stars -->
@@ -81,7 +65,8 @@
                 recebeDados: {
                     titulo: '',
                     noticia: '',
-                    data: ''
+                    data: '',
+                    imagem: '',
                 },
                 id: ''
             }
@@ -97,6 +82,8 @@
             this.recebeDados.titulo = dadosRecebidos.titulo
             this.recebeDados.noticia = dadosRecebidos.textoNoticia 
             this.recebeDados.data = dadosRecebidos.dataPublicacao
+            this.recebeDados.imagem = dadosRecebidos.linkImagem
+            console.log(this.recebeDados.imagem)
           })
         }
     }

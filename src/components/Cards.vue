@@ -1,12 +1,13 @@
 <template>
-  <div class="area-cards container">
+  <div class="area-cards container text-center">
     <div class="row">
-      <div class="col-4" v-for="noticia in noticias" :key="noticia.teste">
+      <div  class="col-md-4"  v-for="noticia in noticias" :key="noticia.teste">
         <div class="card mt-3 mb-3" style="width: 18rem;">
-            <img src="/imagens/img1.jpeg" class="card-img-top" alt="...">
+            <!-- <img src="/imagens/img1.jpeg" class="card-img-top" alt="..."> -->
+            <img :src="noticia.linkImagem" class="card-img-top" alt="...">
             <div class="card-body d-flex flex-column align-items-center">
                 <h5 class="card-title">{{noticia.titulo}}</h5>
-                <p class="card-text">{{noticia.textoNoticia}}</p>
+                <p class="card-text">{{noticia.subNoticia}}</p>
                 <a href="#" class="btn-roxo" @click="lerNoticia(noticia)">Ler notícia</a>
             </div>
           <div class="card-footer espacamento"> 
@@ -14,51 +15,6 @@
           </div> 
         </div>     
       </div>
-
-      <!-- <div class="col-4">
-        <div class="card mt-3" style="width: 18rem;">
-            <img src="/imagens/img1.jpeg" class="card-img-top" alt="...">
-            <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title">Tomb raider</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn-roxo">Ler notícia</a>
-            </div>
-          <div class="card-footer espacamento"> 
-            <small class="text-muted">Atualização: 08/04/2021</small>  
-          </div> 
-        </div>     
-      </div>   -->
-      
-      <!-- <div class="col-4">
-        <div class="card mt-3" style="width: 18rem;">
-            <img src="/imagens/img1.jpeg" class="card-img-top" alt="...">
-            <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title">Tomb raider</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn-roxo">Ler notícia</a>
-            </div>
-          <div class="card-footer espacamento"> 
-            <small class="text-muted">Atualização: 08/04/2021</small>  
-          </div> 
-        </div>     
-      </div> 
-      
-      <div class="col-4">
-        <div class="card mt-3" style="width: 18rem;">
-            <img src="/imagens/img1.jpeg" class="card-img-top" alt="...">
-            <div class="card-body d-flex flex-column align-items-center">
-                <h5 class="card-title">Tomb raider</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn-roxo">Ler notícia</a>
-            </div>
-          <div class="card-footer espacamento"> 
-            <small class="text-muted">Atualização: 08/04/2021</small>  
-          </div> 
-        </div>     
-      </div>      -->
-
-
-                  
     </div>
   </div>
 </template>
@@ -82,7 +38,7 @@ export default{
         dados.push(noticia)
         this.noticias = dados
 
-
+        console.log(this.noticias)
       })
     })
   },

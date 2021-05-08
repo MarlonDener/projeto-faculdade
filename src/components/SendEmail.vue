@@ -2,19 +2,28 @@
 
         <div class="sendEmail">
             <div class="container">
-                    <form id="contato">
-                        <h2 class="titulo">Contato</h2>
-                        <p>Caso tenha um idéia para agregar em nossos serviços, dúvidas, ou algum produto que gostaria de ter, envia a sua mensagem. </p>
-                        <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label text-white">Informe o seu email: </label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
-                        </div>
-                        <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label text-white">Envie a sua mensagem: </label>
-                            <textarea class="form-control"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-info botao mb-5">Enviar</button>
-                    </form>
+              <div class="imagem">
+                <img src="/imagens/contatoimg.svg">
+             </div>
+
+                  <div class="form">
+                      <h2>Entre em contato</h2>
+
+                      <form>
+                          <label>Email:</label>
+                          <input type="email" class="form-control">
+                          
+                          <label>Assunto</label>
+                          <input type="text" class="form-control">
+                          <label>Mensagem:</label>
+                          <textarea class="form-control">
+                              
+                          </textarea>
+
+                          <button class="btn-roxo mt-4">Enviar</button>
+                      </form>
+                  </div>
+        
              </div>
         </div>
 </template>
@@ -26,24 +35,40 @@
 </script>
 
 <style scoped>
-
-
-    .sendEmail{
-        background: rgb(17, 0, 19)
-    }
-
-     p{  
-          padding:15px 0px;
-          text-align: left;
-          color:rgb(216, 216, 216);
-          font-size: 15px;
-          font-family: Arial, Helvetica, sans-serif;
-    }
-
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:30px 0px;
+}
+.image{
+    width:30%;
+}
+.form{
+    width: 70%;
+}
+img{
+    width:100%;
+    height: 100%;
+}
 .botao{
     width:250px;
     background-color: rgb(84, 15, 148);
     
+}
+h2{
+    color:rgb(170, 4, 162);
+    font-weight: 500;
+    font-size: 50px;
+    margin-bottom: 27px;
+}
+
+label{
+    margin:7px 0px;
+    color:#fff;
+    font-weight:lighter;
+    color:rgb(174, 7, 207);
+    font-size: 17px;
 }
 
 input{
@@ -56,7 +81,7 @@ input{
 textarea{
     resize:none;
     height: 170px;
-    padding: 15px;
+    padding: 10px 4px;
     color:#666;
 
 }
