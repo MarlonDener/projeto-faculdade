@@ -1,4 +1,5 @@
  <template>
+ <div class="slider" id="inicio">
   <hooper :autoPlay="true" :playSpeed="4000" :infiniteScroll="true" class="hooper">
     <slide>
       <div class="imagem">
@@ -73,6 +74,7 @@
       <hooper-pagination slot="hooper-addons"></hooper-pagination>
     <hooper-navigation slot="hooper-addons"></hooper-navigation>
   </hooper>
+  </div>
 </template>
 
 <script>
@@ -95,9 +97,6 @@ export default {
   slide{
     background-size:100% 100%;
 
-  }
-  body{
-    height: 100%;
   }
   .imagem{
     height: 80vh;

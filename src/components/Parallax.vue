@@ -1,7 +1,7 @@
 <template>
         <div id="parallax">
             
-        <div class="container h-100">
+        <div class="container h-100" id="ofertas">
 
             <div class="elementos">
 
@@ -155,6 +155,28 @@
 
     .botao{
         display: inline-block;
+    }
+
+    @media (max-width:800px){
+  
+     #parallax{
+        height:198vh;
+        width: 100%;
+        background-image: url('/imagens/mario.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        padding:30px 0px;
+    }
+    .elementos{
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .card{
+        width:70%;
+        margin:28px auto;
+    }
     }
 </style>
 

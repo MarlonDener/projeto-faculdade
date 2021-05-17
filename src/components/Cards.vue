@@ -1,5 +1,5 @@
 <template>
-  <div class="area-cards container text-center">
+  <div class="area-cards container text-center" id="noticias">
     <div class="row">
       <div  class="col-md-4"  v-for="noticia in noticias" :key="noticia.teste">
         <div class="card mt-3 mb-3" style="width: 18rem;">
