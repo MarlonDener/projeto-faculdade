@@ -15,8 +15,14 @@
                             <input type="text" class="form-control" v-model="dadosNoticias.titulo">
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Digite a sua noticia :</label>
-                            <textarea class="form-control" id="exampleInputPassword1" v-model="dadosNoticias.textoNoticia"></textarea>
+                            <!-- <label for="exampleInputPassword1" class="form-label">Digite a sua noticia :</label>
+                            <textarea class="form-control" id="exampleInputPassword1" v-model="dadosNoticias.textoNoticia"></textarea> -->
+
+                        <quill-editor
+                          :content="content"
+                          :options="editorOption"
+                          v-model="dadosNoticias.textoNoticia"
+                        />                            
                         </div>
                         
                         <div class="mb-3">
@@ -45,7 +51,13 @@
 <script>
 import firebase from 'firebase/app'
 import dbfirebase from '../firebase/db.js'
+import 'quill/dist/quill.core.css'
+import 'quill/dist/quill.snow.css'
+import 'quill/dist/quill.bubble.css'
+
+import { quillEditor } from 'vue-quill-editor'
 export default {
+  components: {quillEditor},  
   data(){
     return{
       dadosNoticias: {
@@ -55,7 +67,11 @@ export default {
         linkImagem: '',
         id_noticia: '',
         subNoticia: ''
-      }
+      },
+      content: '<h2>I am Example</h2>',
+      editorOption: {
+        // Some Quill options...
+      }      
     }
   },
   methods: {

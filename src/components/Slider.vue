@@ -10,8 +10,8 @@
       <div class="imagem">
         <div class="opacidade"></div>
         <div class="info">
-          <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p>
-          <a href="#">Ver mais</a>
+          <!-- <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p> -->
+          <!-- <a href="#">Ver mais</a> -->
         </div>
         <img src="/imagens/img13.jpg">
       </div>
@@ -20,8 +20,8 @@
        <div class="imagem">
         <div class="opacidade"></div>
           <div class="info">
-            <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p>
-            <a href="#">Ver mais</a>
+            <!-- <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p> -->
+            <!-- <a href="#">Ver mais</a> -->
           </div>
           <img src="/imagens/img2.jpg">
        </div>
@@ -30,8 +30,8 @@
        <div class="imagem">
           <div class="opacidade"></div>
         <div class="info">
-          <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p>
-          <a href="#">Ver mais</a>
+          <!-- <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p> -->
+          <!-- <a href="#">Ver mais</a> -->
         </div>
        <img src="/imagens/img9.jpg">
        </div>
@@ -41,8 +41,8 @@
        <div class="imagem">
       <div class="opacidade"></div>
         <div class="info">
-          <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui: </p>
-          <a href="#">Ver mais</a>
+          <!-- <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui: </p> -->
+          <!-- <a href="#">Ver mais</a> -->
         </div>
        <img src="/imagens/img11.jpg">
        </div>
@@ -53,8 +53,8 @@
        <div class="imagem">
           <div class="opacidade"></div>
         <div class="info">
-          <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui: </p>
-          <a href="#">Ver mais</a>
+          <!-- <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui: </p> -->
+          <!-- <a href="#">Ver mais</a> -->
         </div>
        <img src="/imagens/img14.jpg">
        </div>
@@ -64,8 +64,8 @@
        <div class="imagem">
         <div class="opacidade"></div>
           <div class="info">
-            <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p>
-            <a href="#">Ver mais</a>
+            <!-- <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p> -->
+            <!-- <a href="#">Ver mais</a> -->
           </div>      
        <img src="/imagens/img7.jpg">
        </div>

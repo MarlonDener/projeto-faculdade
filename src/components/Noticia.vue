@@ -6,7 +6,7 @@
             <h2>{{recebeDados.titulo}}</h2>
             <div class="info">
                 <div class="descricao">
-                 Noticia publicada chamou atenção nas redes sociais, com os fãns do game
+                <!-- {{recebeDados.subtitulo}} -->
                 </div><!--descricao-->
                 <div class="data">
                     Data Publicação: {{new Date(recebeDados.data.seconds * 1000).toLocaleDateString()}}
@@ -17,8 +17,7 @@
                 <img :src="recebeDados.imagem">
             </div>
             <div class="text-noticia">
-               <p> {{ recebeDados.noticia}}</p>
-
+               <p v-html="recebeDados.noticia"> {{ recebeDados.noticia}}</p>
             </div>
 
             <!-- Stars -->
@@ -67,6 +66,7 @@
                     noticia: '',
                     data: '',
                     imagem: '',
+                    subtitulo: ''
                 },
                 id: ''
             }
@@ -83,6 +83,7 @@
             this.recebeDados.noticia = dadosRecebidos.textoNoticia 
             this.recebeDados.data = dadosRecebidos.dataPublicacao
             this.recebeDados.imagem = dadosRecebidos.linkImagem
+            this.recebeDados.subtitulo = dadosRecebidos.subNoticia
             console.log(this.recebeDados.imagem)
           })
         }

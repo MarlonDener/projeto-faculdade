@@ -4,10 +4,10 @@
       <div  class="col-md-4"  v-for="noticia in noticias" :key="noticia.teste">
         <div class="card mt-3 mb-3" style="width: 18rem;">
             <!-- <img src="/imagens/img1.jpeg" class="card-img-top" alt="..."> -->
-            <img :src="noticia.linkImagem" class="card-img-top" alt="...">
+            <img :src="noticia.linkImagem" class="card-img-top " alt="...">
             <div class="card-body d-flex flex-column align-items-center">
                 <h5 class="card-title">{{noticia.titulo}}</h5>
-                <p class="card-text">{{noticia.subNoticia}}</p>
+                <p class="card-text">{{noticia.subNoticia.substring(0, 170)}}...</p>
                 <a href="#" class="btn-roxo" @click="lerNoticia(noticia)">Ler notícia</a>
             </div>
           <div class="card-footer espacamento"> 
@@ -21,6 +21,7 @@
 
 <script>
 import dbfirebase from '../firebase/db.js' 
+
 export default{
   data(){
     return{
@@ -76,6 +77,10 @@ export default{
   background-color: #fff;
   color: #5d0694;
   border: 1px solid #5d0694;
+}
+
+.card-img-top {
+  height: 150px;
 }
 
 </style> 
