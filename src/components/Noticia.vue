@@ -1,6 +1,6 @@
 <template>
   <div class="allComponent">
-    <Header />
+    <HeaderNoticias />
     <div class="container">
       <div class="noticias">
         <!--<h2>O jogo está em promoção durante essa quarentena</h2>-->
@@ -60,12 +60,12 @@
 
 <script>
 import dbfirebase from "../firebase/db.js";
-import Header from './Header'
+import HeaderNoticias from './HeaderNoticias'
 import Footer from "./FooterPagina";
 export default {
   name: "Noticia",
   components: {
-    Header,
+    HeaderNoticias,
     Footer,
   },
   data() {

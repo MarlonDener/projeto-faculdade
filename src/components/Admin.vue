@@ -58,7 +58,7 @@ export default {
         
         console.log(res)
       }catch(error){
-        alert('Senha errada, burrão')
+        alert('Senha incorreta.')
       }
     },
     voltarHome(){

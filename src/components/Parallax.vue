@@ -8,7 +8,7 @@
 
                     <div class="card">
                             
-                            <div class="vocesabia">Voce sabia ?</div>
+                            <div class="vocesabia">Você sabia ?</div>
                             <h3 class="mario">Mario</h3>
                             <div class="topo">
                                 <img src="/imagens/mario1.png">
@@ -25,35 +25,34 @@
                     </div>
 
                     <div class="card">
-
+                            <div class="vocesabia">Você sabia ?</div>
                             <h3 class="kong">Kong</h3>
                              <div class="topo">
                                 <img class="kong_up" src="/imagens/kong.png">
                             </div>
                             
                             <div class="texto-card">
-                                    <p>Lorem ipsumi psumips 
-                                        Lorem ipsumi psumips umipsum ipsumipsumipsumumipsum ipsumipsumipsum</p>
-                                        Lorem ipsumi psumips sadsadsadsumipsum ipsumipsumipsum
+                                    <p>Donkey Kong Country 3 é o único título da série lançado para SNES que não tem uma ave como chefão. No primeiro DKC, a monstruosa
+                                        Master Necky é a líder do segundo mundo. Já em DKC 2, Krow é o primeiro boss que precisa ser derrotado.</p>
+                    
                             </div>
                             
-                           <button class="btn-roxo">Ver jogo</button>
                     </div>
 
                     <div class="card">
-                      
-                            <h3 class="sonic">Sonic</h3>
+                           <div class="vocesabia">Você sabia ?</div>
+                           <h3 class="sonic">Sonic</h3>
                            <div class="topo">
                                 <img src="/imagens/sonic.png">
                             </div>
                             
                             <div class="texto-card">
-                                    <p>Lorem ipsumi psumips 
-                                        Lorem ipsumi psumips umipsum ipsumipsumipsumumipsum ipsumipsumipsum
-                                        Lorem ipsumi psumips umipsum isadasdsadpsumissspsumipsum</p>
+                                    <p>A famosa tela inicial do jogo, que apresentava o logo da Sega, uma introdução do personagem 
+                                        e algumas amostras das fases, ocupava 1/8 do cartucho! Isso deixava 
+                                        cerca de 300 KB de espaço para o restante do jogo, o que é menos do que muitas fotos tiradas por celulares de hoje!</p>
                             </div>
 
-                            <button class="botao btn-roxo">Ver jogo</button>
+            
                     </div>
  
              </div>
@@ -69,8 +68,8 @@
 
 
 
-<style scoped>
 
+<style scoped>
 
 
     #parallax{
@@ -117,6 +116,8 @@
         color:rgb(18, 9, 138);
     }
     .card h3{
+        opacity: 0.5;
+        text-shadow: 10px 25px 10px 6px rgba(173, 123, 123, 0.5);
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
@@ -134,12 +135,16 @@
             width:100px;
             height:100px;
             position: relative;
+            top:20px;
             z-index: 2;
         }
 
     .texto-card{
         font-family: Arial, Helvetica, sans-serif;
-        padding: 20px 0px;
+        padding-top:40px;
+        padding-bottom: 7px;
+        padding-left: 5px;
+        padding-right: 5px;
         font-weight: 500;
         color:#fff;
     }
@@ -150,12 +155,12 @@
     @keyframes up{
         0%{
             
-            transform: translateY(10px); 
+            transform: translateY(0px); 
             transform: scale(1);
         }
         100%{
             transform: scale(2);
-            transform: translateY(-80px);
+            transform: translateY(-30px);
         }
     }
 
@@ -172,7 +177,7 @@
     @media (max-width:800px){
   
      #parallax{
-        height:198vh;
+        height:240vh;
         width: 100%;
         background-image: url('/imagens/mario.jpg');
         background-repeat: no-repeat;
@@ -183,11 +188,12 @@
     .elementos{
         height: 100%;
         flex-direction: column;
+        margin:0 auto;
     }
 
     .card{
-        width:70%;
-        margin:28px auto;
+        width:73%;
+        margin:10px auto;
     }
     }
 </style>

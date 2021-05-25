@@ -132,7 +132,8 @@ a{text-decoration: none;}
   text-decoration: none;
   color:rgb(255, 118, 255);
   padding:7px 30px;
-  background-color: rgba(0, 0,3,0.3);
+  background-color:rgba(0,0,0,0.8);
+  box-shadow:2px 5px 10px 5px rgba(0,0,0,0.5);
   transition: 0.5s ease-in-out;
 }
 .mobile_menu a:hover{
