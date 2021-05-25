@@ -1,5 +1,6 @@
 <template>
   <div id="page_home">
+      <Header />
       <Slider />
       <Cards />
       <About />
@@ -11,6 +12,7 @@
 </template>
 
 <script>
+import Header from './Header'
 import Slider from './Slider';
 import Cards from './Cards';
 import About from './About';
@@ -19,7 +21,7 @@ import SendEmail from './SendEmail';
 import FooterPagina from './FooterPagina';
 export default {
   components:{
-    Slider, Cards, About, Parallax ,SendEmail, FooterPagina
+    Header, Slider, Cards, About, Parallax ,SendEmail, FooterPagina
   }
 }
 </script>

@@ -11,11 +11,19 @@ const router = new Router({
     mode: 'history',
     routes: [
         {path: '/', component: PageHome, name: 'PageHome'},
-        {path: '/admin', component: Admin, name: 'Admin'},
+        {path: '/login', component: Admin, name: 'Admin'},
         {path: '/FormularioAdmin', component:FormularioAdmin, name: 'FormularioAdmin'},
         {path: '/noticia/:id', component:Noticia, name: 'Noticia'}
     ]
 
+})
+
+router.beforeEach((to, from, next) => {
+    if(!window.uid && to.name === 'FormularioAdmin'){
+      next({path: '/login'})
+    }else{
+      next()
+    }
 })
 
 export default router

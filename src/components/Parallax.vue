@@ -7,18 +7,21 @@
 
 
                     <div class="card">
+                            
+                            <div class="vocesabia">Voce sabia ?</div>
                             <h3 class="mario">Mario</h3>
                             <div class="topo">
                                 <img src="/imagens/mario1.png">
                             </div>
                             
                             <div class="texto-card">
-                                    <p>Lorem ipsumi psumips 
-                                        Lorem ipsumi psumips umipsum ipsumipsumipsumumipsum ipsumipsumipsum</p>
-                                        Lorem ipsumi psumips umipsum ipsumipsumipsum
+                                    <p>
+                                        Cartucho raro do jogo 'Super Mario' esquecido em gaveta por 35 anos é leiloado por R$ 3,7 milhões
+                                        Jogo para NES foi lançado em 1986. Preço de US$ 660 mil (R$ 3,7 milhões) 
+                                        foi o valor mais alto já pago em um leilão por um game, disse a empresa Heritage Auctions.
+                                 </p>
                             </div>
                             
-                            <button class="btn-roxo">Ver jogo</button>
                     </div>
 
                     <div class="card">
@@ -90,7 +93,10 @@
     .card{
         width:300px;
         background-color: rgb(19, 19, 19);
-        padding:20px 9px;
+        padding-top:3px;
+        padding-right: 9px;
+        padding-left: 9px;
+        padding-bottom: 4px;
         box-shadow: 5px 6px 7px 7px rgba(0,0,0,0.5);
         margin:0 auto;
         position: relative;
@@ -115,7 +121,7 @@
         left: 50%;
         transform: translateX(-50%);
         font-size:100px;
-        top:0px;
+        top:60px;
         z-index: 1;
     }
     .topo{
@@ -155,6 +161,12 @@
 
     .botao{
         display: inline-block;
+    }
+
+    .vocesabia{
+        text-align: center;
+        font-size: 30px;
+        color:rgb(235, 231, 3);
     }
 
     @media (max-width:800px){

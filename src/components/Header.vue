@@ -6,7 +6,7 @@
               <div class="logo"><img src="/imagens/logot.png" /></div>
               <nav>
                   <ul>
-                      <li><a href="#inicio">Início</a></li>
+                      <li><a href="/">Início</a></li>
                       <li><a href="#noticias">Noticias</a></li>
                       <li><a href="#about">Sobre</a></li>
                       <li><a href="#ofertas">Ofertas</a></li>
@@ -20,7 +20,7 @@
 
               <nav>
                   <ul>
-                      <li><a v-on:click="activeMenu" class="morePadding" href="#inicio">Início</a></li>
+                      <li><a v-on:click="activeMenu" class="morePadding" href="/">Início</a></li>
                       <li><a v-on:click="activeMenu" href="#noticias">Noticias</a></li>
                       <li><a v-on:click="activeMenu" class="morePadding" href="#about">Sobre</a></li>
                       <li><a v-on:click="activeMenu" href="#ofertas">Ofertas</a></li>
