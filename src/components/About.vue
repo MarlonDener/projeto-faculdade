@@ -1,4 +1,6 @@
 <template>
+    <div class="background">
+    <div class="opacity">s</div>
     <div class="about" id="about">
 
         <h2 class="titulo">Sobre nós</h2>
@@ -6,7 +8,7 @@
         <div class="sobre_parte">
 
                 <div class="imagem">    
-                        s
+                    
                 </div>
 
             <div class="sobre_texto">
@@ -22,6 +24,7 @@
         </div>
 
      </div>
+     </div>
 </template>
 
 <script>
@@ -29,16 +32,37 @@
 </script>
 
 <style scoped>
+            .background{
+                
+    width:100%;
+    background-image: url('https://wallpaperforu.com/wp-content/uploads/2020/10/video-game-wallpaper-20100520224036-scaled.jpg');
+       background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        position: relative;
+            }
+            .opacity{
+                width:100%;
+                height: 100%;
+                position: absolute;
+                top:0;
+                left: 0;
+                background-color: rgba(0,0,0,0.7);
+                z-index: 2;
+            }
             .about{
                 margin:40px auto;
+                z-index: 4;
+                position: relative
             }
             
             p{  
                 padding:2px 0px;
                 text-align: left;
-                color:rgb(216, 216, 216);
-                font-size: 18px;
+                color:#fff;
+                font-size: 20px;
                 font-family: Arial, Helvetica, sans-serif;
+                
                 font-weight: lighter;
             }
 
@@ -71,6 +95,11 @@
    
     .sobre_texto{
         width: 50%;
+        background-color: rgba(0,0,0,0.6);
+        padding:25px;
+        border-radius: 20px;
+        box-shadow: 5px 8px 6px 4px rgba(0,0,0,0.6);
+
     }
     .botaoColor{
         width:200px;
