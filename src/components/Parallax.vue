@@ -8,7 +8,7 @@
 
                     <div class="card">
                             
-                            <div class="vocesabia">Você sabia ?</div>
+                            <div class="vocesabia"><img src="/imagens/information.png" /></div>
                             <h3 class="mario">Mario</h3>
                             <div class="topo">
                                 <img src="/imagens/mario1.png">
@@ -25,22 +25,22 @@
                     </div>
 
                     <div class="card">
-                            <div class="vocesabia">Você sabia ?</div>
+                             <div class="vocesabia"><img src="/imagens/information.png" /></div>
                             <h3 class="kong">Kong</h3>
                              <div class="topo">
                                 <img class="kong_up" src="/imagens/kong.png">
                             </div>
                             
                             <div class="texto-card">
-                                    <p>Donkey Kong Country 3 é o único título da série lançado para SNES que não tem uma ave como chefão. No primeiro DKC, a monstruosa
-                                        Master Necky é a líder do segundo mundo. Já em DKC 2, Krow é o primeiro boss que precisa ser derrotado.</p>
+                                    <p>Donkey Kong Country 3 é o único título da série lançado dos games para SNES que não contém uma ave como chefão. No primeiro DKC, a monstruosa
+                                        Master Necky é a líder do segundo mundo. Já em DKC 2, Krow é o primeiro boss que precisa ser derrotado</p>
                     
                             </div>
                             
                     </div>
 
                     <div class="card">
-                           <div class="vocesabia">Você sabia ?</div>
+                           <div class="vocesabia"><img src="/imagens/information.png" /></div>
                            <h3 class="sonic">Sonic</h3>
                            <div class="topo">
                                 <img src="/imagens/sonic.png">
@@ -91,7 +91,7 @@
 
     .card{
         width:300px;
-        background-color: rgb(19, 19, 19);
+        background-color: rgb(0, 0, 0);
         padding-top:3px;
         padding-right: 9px;
         padding-left: 9px;
@@ -100,11 +100,11 @@
         margin:0 auto;
         position: relative;
         border-radius: 5px;
+        transition: 0.5s cubic-bezier(0.55, 0.055, 0.675, 0.19);
     }
-    button{
-        margin:auto;
+    .card:hover{
+        transform: scale(1.1);
     }
-
     .mario{
         top:-7px;
         color:rgb(136, 4, 4);
@@ -122,7 +122,7 @@
         left: 50%;
         transform: translateX(-50%);
         font-size:100px;
-        top:60px;
+        top:65px;
         z-index: 1;
     }
     .topo{
@@ -147,6 +147,7 @@
         padding-right: 5px;
         font-weight: 500;
         color:#fff;
+        transition: 0.5s linear all;
     }
 
     .kong_up{
@@ -169,9 +170,9 @@
     }
 
     .vocesabia{
+        padding-bottom: 15px;
+        padding-top: 5px;
         text-align: center;
-        font-size: 30px;
-        color:rgb(235, 231, 3);
     }
 
     @media (max-width:800px){
