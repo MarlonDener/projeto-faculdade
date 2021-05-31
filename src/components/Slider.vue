@@ -99,7 +99,7 @@ export default {
 
   }
   .imagem{
-    height: 80vh;
+    height: 70vh;
      width: 100%;
      position: relative;
      display: flex;
@@ -134,7 +134,7 @@ export default {
   }
   .hooper{
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     outline: none;
     border:none;
   }
