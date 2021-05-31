@@ -4,6 +4,7 @@
       <Slider />
       <Cards />
       <About />
+      <NoticiasExtra />
       <Parallax />
       <SendEmail />
       <FooterPagina  />
@@ -19,9 +20,11 @@ import About from './About';
 import Parallax from './Parallax'
 import SendEmail from './SendEmail';
 import FooterPagina from './FooterPagina';
+import NoticiasExtra from './NoticiasExtra.vue';
 export default {
   components:{
-    Header, Slider, Cards, About, Parallax ,SendEmail, FooterPagina
+    Header, Slider, Cards, About, Parallax ,SendEmail, FooterPagina,
+    NoticiasExtra
   }
 }
 </script>
