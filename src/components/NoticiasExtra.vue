@@ -1,7 +1,7 @@
 <template>
  <section class="noticias2" id="noticias2">
 
-      <h2 class="titulo">Mais noticias2</h2>
+      <h2 class="titulo">Mundo nerd</h2>
 
       <div class="rows">
 
