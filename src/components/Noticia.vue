@@ -95,7 +95,6 @@ export default {
         this.recebeDados.data = dadosRecebidos.dataPublicacao;
         this.recebeDados.imagem = dadosRecebidos.linkImagem;
         this.recebeDados.subtitulo = dadosRecebidos.subNoticia;
-        console.log(this.recebeDados.imagem);
       });
   },
 };
