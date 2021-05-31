@@ -27,6 +27,7 @@
        </div>
     </slide>
     <slide>
+      <a href="/noticia/W1msjIR4YzB9y1aNT3aj">
        <div class="imagem">
           <div class="opacidade"></div>
         <div class="info">
@@ -35,7 +36,7 @@
         </div>
        <img src="/imagens/img9.jpg">
        </div>
-       
+       </a>
     </slide>
     <slide>
        <div class="imagem">

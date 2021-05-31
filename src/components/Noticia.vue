@@ -131,6 +131,11 @@ h2 {
 }
 .text-noticia {
   padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin:0 auto;
+  max-width: 800px;
 }
 .text-noticia p {
   color: rgb(37, 37, 37);
