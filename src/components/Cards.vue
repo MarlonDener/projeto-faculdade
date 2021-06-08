@@ -1,13 +1,13 @@
 <template>
   <div class="area-cards container text-center" id="noticias">
     <div class="row">
-      <div  class="col-md-4"  v-for="noticia in noticias" :key="noticia.teste">
-        <div class="card mt-3 mb-3" style="width: 18rem;">
+      <div  class="col-md-4 tamanho"  v-for="noticia in noticias" :key="noticia.teste">
+        <div class="card mt-3 mb-3 tamanho">
             <!-- <img src="/imagens/img1.jpeg" class="card-img-top" alt="..."> -->
             <img :src="noticia.linkImagem" class="card-img-top " alt="...">
             <div class="card-body d-flex flex-column align-items-center">
                 <h5 class="card-title">{{noticia.titulo}}</h5>
-                <p class="card-text">{{noticia.subNoticia.substring(0, 170)}}...</p>
+                <p class="card-text">{{noticia.subNoticia.substring(0, 100)}}...</p>
                 <a href="#" class="btn-roxo" @click="lerNoticia(noticia)">Ler notícia</a>
             </div>
           <div class="card-footer espacamento"> 
@@ -30,7 +30,7 @@ export default{
   },
   created(){
     const dados = []
-    dbfirebase.collection("noticias")
+    dbfirebase.collection("noticias").limit(6)
     .get()
     .then(res => {
       res.forEach(doc => {
@@ -45,8 +45,8 @@ export default{
   },
   methods: {
     lerNoticia(noticia){
-      console.log(noticia)
       this.$router.push({name: 'Noticia', params: {id: noticia.id_noticia }})
+   
     }
   }
 }
@@ -57,7 +57,8 @@ export default{
     padding: 10px 3px;
     text-align: right;
 }
-
+.tamanho{
+width:18.5rem;}
 .btn-roxo{
   background-color: #5d0694;
   color: #fff;
@@ -82,5 +83,9 @@ export default{
 .card-img-top {
   height: 150px;
 }
-
+@media (max-width: 800px){
+  .tamanho{
+    width:100%;
+  }
+}
 </style> 
