@@ -1,5 +1,9 @@
 <template>
   <div>
+    <div id="modal-form" class="modal-form" v-if="modal_form">
+      <span class="icone-check"><i class="far fa-check-circle"></i></span>
+      <p>Notícia postada com sucesso!</p>
+    </div>
     <HeaderLogin />
     <div class="formulario">
         <div class="row">
@@ -63,26 +67,66 @@ export default {
       },
       editorOption: {
         // Some Quill options...
-      }      
+      },
+      modal_form: false      
     }
   },
   methods: {
     enviarDados(){
-      console.log(`${this.dadosNoticias.titulo} - ${this.dadosNoticias.textoNoticia}`)
-      dbfirebase.collection("noticias").add(this.dadosNoticias)
-      .then((doc) => {
-        dbfirebase.collection("noticias").doc(doc.id)
-        .update({
-          "id_noticia": doc.id
+      if(this.dadosNoticias.titulo === '' || this.dadosNoticias.textoNoticia === '' || this.dadosNoticias.linkImagem === '' || this.dadosNoticias.subNoticia === ''){
+        alert('Preencha todos os campos corretamente')
+      }else{
+        console.log(`${this.dadosNoticias.titulo} - ${this.dadosNoticias.textoNoticia}`)
+        dbfirebase.collection("noticias").add(this.dadosNoticias)
+        .then((doc) => {
+          dbfirebase.collection("noticias").doc(doc.id)
+          .update({
+            "id_noticia": doc.id
+          })
         })
-      })
-
+        .then(() => {
+          this.modal_form = true
+          setTimeout(() => {
+            this.modal_form = false
+            this.dadosNoticias.titulo = ''
+            this.dadosNoticias.textoNoticia = ''
+            this.dadosNoticias.linkImagem = ''
+            this.dadosNoticias.subNoticia = ''
+          }, 1500)
+        })
+      }
     }
   }
 }
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap');
+  .modal-form{
+    width: 100%;
+    position: fixed;
+    top: 0%;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #05F140;
+  }
+  .icone-check{
+    font-size: 45px;
+    animation: efeitozoom 1s infinite ;
+  }
+  #modal-form p{
+    margin-top: -10px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Nunito', sans-serif;
+  }
   .formulario{
     height: 100vh;
   }
@@ -103,5 +147,16 @@ export default {
   }
   textarea {
       resize: none;
+  }
+  @keyframes efeitozoom{
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }    
   }
 </style>
