@@ -58,7 +58,7 @@
 
 <script>
 export default {
-  name:"header",
+  name:"sadsa",
   data(){
     return{
       MenuActive: false
@@ -73,7 +73,9 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+
+
 .button-menu{
   width:50px;
   height: 50px;
@@ -101,15 +103,11 @@ a{text-decoration: none;}
   display: none;
   position: fixed;
   right: -70%;
-  width: 70%;
+  width: 50%;
   background-color: #000;
-  height: 100%;
+  height: 60%;
   z-index: 400;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 28px;
-  margin:0px auto;
   transition: all 0.3s;
 }
 
@@ -120,7 +118,6 @@ a{text-decoration: none;}
 }
 .mobile_menu li {
   margin:20px auto;
-  text-align: center;
 }
 .mobile_menu ul{
   position: absolute;
@@ -131,7 +128,7 @@ a{text-decoration: none;}
 .mobile_menu a{
   text-decoration: none;
   color:rgb(255, 118, 255);
-  padding:7px 30px;
+  padding:7px 70px;
   background-color:rgba(0,0,0,0.8);
   box-shadow:2px 5px 10px 5px rgba(0,0,0,0.5);
   transition: 0.5s ease-in-out;
@@ -143,7 +140,7 @@ a{text-decoration: none;}
   opacity: 0.8;
 }
 a.morePadding{
-  padding: 7px 41px;
+  padding: 7px 80px;
 }
 .desktop_menu{
   display: flex;
@@ -153,7 +150,7 @@ a.morePadding{
   padding:8px 20px;
   background: rgb(16, 0, 29);
   box-shadow: 4px 6px 7px 5px rgba(3, 0, 3, 0.5);
-  z-index: 800;
+  z-index: 10;
   position: relative;
 }
 .logo img{
