@@ -178,7 +178,7 @@
     @media (max-width:800px){
   
      #parallax{
-        height:240vh;
+        height:230vh;
         width: 100%;
         background-image: url('/imagens/mario.jpg');
         background-repeat: no-repeat;
@@ -190,11 +190,12 @@
         height: 100%;
         flex-direction: column;
         margin:0 auto;
+        justify-content: center;
     }
 
     .card{
         width:73%;
-        margin:10px auto;
+        margin:25px auto;
     }
     }
 </style>

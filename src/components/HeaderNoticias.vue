@@ -2,19 +2,21 @@
   <div>
     <header>
       <div class="desktop_menu">
-        <div class="logo"><img src="/imagens/logot.png" /></div>
+        <div class="logo"><a href="/"><img src="/imagens/logot.png" /></a></div>
         <div class="gamesclub">GamesClub</div>
-        <nav>
-          <ul>
-            <li><a href="/">Voltar</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div
+        <div>
+          <nav class="inicio">
+            <ul>
+            <li><a href="/">Inicio</a></li>
+            </ul>
+          </nav>
+             <div
         class="button-menu"
         :class="MenuActive ? 'active' : ''"
         v-on:click="activeMenu"
       ></div>
+      </div>
+      </div>
       <div class="mobile_menu" :class="MenuActive ? 'active' : ''">
         <nav>
           <ul>
@@ -35,22 +37,25 @@
 
 export default {
   name: "HeaderNoticias",
-  data() {
-    return {
-      MenuActive: false,
-    };
+  data(){
+    return{
+      MenuActive: false
+    }
+  },
+  methods:{
+    activeMenu: function(){
+      this.MenuActive = !this.MenuActive
+    }
   },
 };
 </script>
 
-<style>
+<style scoped>
+
 .button-menu {
-  width: 50px;
+  width: 54px;
   height: 50px;
-  background-color: rgba(66, 1, 66, 0.973);
-  position: fixed;
-  right: 15px;
-  top: 15px;
+  background-color: rgba(114, 5, 99, 0.973);
   background-image: url("/imagens/menu.png");
   background-size: 50% 50%;
   background-position: center;
@@ -60,7 +65,12 @@ export default {
   box-shadow: 3px 2px 2px 2px rgba(129, 0, 129, 0.123);
   transition: all 0.3s ease 0.2s;
   display: none;
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  position:static;
+  z-index: 100;
+}
+.button-menu:hover{
+  background-color: rgba(83, 4, 73, 0.973);
 }
 .button-menu.active {
   background-color: rgba(192, 13, 192, 0.973);
@@ -70,19 +80,21 @@ a {
   text-decoration: none;
 }
 .mobile_menu {
+  top:70px;
   display: none;
-  position: fixed;
   right: -70%;
   width: 70%;
   background-color: #000;
-  height: 100%;
-  z-index: 400;
+  height: 30%;
+  z-index: 80;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 28px;
   margin: 0px auto;
   transition: all 0.3s;
+  position: absolute;
+  
 }
 
 .mobile_menu.active {
@@ -120,11 +132,12 @@ a.morePadding {
   align-items: center;
   justify-content: space-between;
   height: 72px;
-  padding: 8px 20px;
-  background: rgb(16, 0, 29);
-  box-shadow: 4px 6px 7px 5px rgba(3, 0, 3, 0.5);
-  z-index: 800;
+  padding: 14px 20px;
+  background: rgb(7, 0, 12);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 4px 6px 7px 5px rgba(95, 95, 95, 0.075);
   position: relative;
+  z-index: 2;
 }
 .logo img {
   margin-left: 30px;
@@ -169,27 +182,28 @@ ul {
   list-style: none;
 }
 
-@media (max-width: 1000px) {
-  .desktop_menu nav ul a {
-    padding: 9px 30px;
-  }
-}
-
-@media (max-width: 870px) {
-  .desktop_menu {
-    display: none;
-  }
-  .mobile_menu {
-    display: block;
-  }
+@media (max-width:900px){
   .button-menu {
     display: block;
   }
-}
-
-@media (min-width: 801px) {
-  .mobile_menu {
-    display: none;
+  .inicio{
+    display:none;
   }
+.gamesclub{
+    font-family: 'Train One', cursive;
+    font-size: 25px;
+    position: relative;
+    left: -35px;
+    color:#fff;
+}
+.logo img {
+  margin-left: 0px;
+  
+}
+@media (max-width:550px){
+  .gamesclub{
+    display: none;
+}
+}
 }
 </style>
