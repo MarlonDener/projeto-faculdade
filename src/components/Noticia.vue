@@ -56,7 +56,12 @@
         </section>
 
         <div id="toggle" @click="changeColor">
-          <i class="indicator" v-bind:class="white ? 'noActive' : 'Active'"></i>
+          
+            <i class="far fa-moon"></i>
+          <div class="indicator" v-bind:class="white ? 'noActive' : 'Active'">
+          </div>
+          
+          <i class="far fa-sun"></i>
         </div>
 
 <!--
@@ -216,12 +221,30 @@ h4{
   inset 0 8px 8px rgba(0,0,0,0.1),
   inset 0 -4px 4px rgba(0,0,0,0.1);
 }
+.fa-moon{
+  position: relative;
+  left: 15px;
+  top:30%;
+  color:#222222;
+  font-size:18px;
+  z-index: 5;
+}
+.fa-sun{
+  position: relative;
+  left:47px;
+  top:30%;
+  color:#ebee36;
+  z-index: 5;
+}
 #toggle .indicator{
   position: absolute;
   top:0;
   width:50px;
   height: 50px;
   border-radius: 50%;
+  z-index: 10;
+  text-align: center;
+  line-height: 50px;
   transform: scale(0.9);
   box-shadow: inset 0 8px 40px rgba(198, 0, 216, 0.1),
   inset 0 4px 4px rgba(0,0,0,0.1),
