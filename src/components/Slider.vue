@@ -2,74 +2,60 @@
  <div class="slider" id="inicio">
   <hooper :autoPlay="true" :playSpeed="4000" :infiniteScroll="true" class="hooper">
     <slide>
+     
       <div class="imagem">
         <img src="/imagens/capasite.jpg">
       </div>
     </slide>
     <slide>
+       <a href="/noticia/P6v9B95PBFu2ezxGGLws">
       <div class="imagem">
         <div class="opacidade"></div>
         <div class="info">
-          <!-- <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p> -->
-          <!-- <a href="#">Ver mais</a> -->
+           <p>Como jogar Shadow of the Tomb Raider (Guia para iniciantes)</p> 
+           <a href="/noticia/P6v9B95PBFu2ezxGGLws" class="btn-roxo">Clique para ler</a> 
         </div>
         <img src="/imagens/img13.jpg">
       </div>
+      </a>
     </slide>
     <slide>
+     <a href="/noticia/Z73ef4xW4bzuIqphfWgJ">
        <div class="imagem">
         <div class="opacidade"></div>
           <div class="info">
-            <!-- <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p> -->
-            <!-- <a href="#">Ver mais</a> -->
+             <p>Marvel’s Spider-Man, vale a pena ? Confira aqui </p> 
+             <a href="/noticia/Z73ef4xW4bzuIqphfWgJ" class="btn-roxo">Ler notícia</a> 
           </div>
           <img src="/imagens/img2.jpg">
        </div>
+       </a>
     </slide>
     <slide>
       <a href="/noticia/W1msjIR4YzB9y1aNT3aj">
        <div class="imagem">
           <div class="opacidade"></div>
         <div class="info">
-          <!-- <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p> -->
-          <!-- <a href="#">Ver mais</a> -->
+           <p>Mais de 500 mil jogadores banidos desde que o game foi lançado em março de 2020</p> 
+           <a href="/noticia/W1msjIR4YzB9y1aNT3aj" class="btn-roxo">Ler notícia</a> 
         </div>
        <img src="/imagens/img9.jpg">
        </div>
        </a>
     </slide>
-    <slide>
-       <div class="imagem">
-      <div class="opacidade"></div>
-        <div class="info">
-          <!-- <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui: </p> -->
-          <!-- <a href="#">Ver mais</a> -->
-        </div>
-       <img src="/imagens/img11.jpg">
-       </div>
-       
-    </slide>
    
     <slide>
-       <div class="imagem">
-          <div class="opacidade"></div>
-        <div class="info">
-          <!-- <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui: </p> -->
-          <!-- <a href="#">Ver mais</a> -->
-        </div>
-       <img src="/imagens/img14.jpg">
-       </div>
-    </slide>
-   
-    <slide>
+      
+      <a href="/noticia/W1msjIR4YzB9y1aNT3aj">
        <div class="imagem">
         <div class="opacidade"></div>
           <div class="info">
-            <!-- <p>Novos jogos disponíveis gratuitamente para PS4, Confira aqui:</p> -->
-            <!-- <a href="#">Ver mais</a> -->
+             <p>A comparação dos gráficos Horizon Forbidden West e Horizon Zero Dawn</p> 
+             <a href="/noticia/W1msjIR4YzB9y1aNT3aj" class="btn-roxo">Ler notícia</a> 
           </div>      
        <img src="/imagens/img7.jpg">
        </div>
+       </a>
     </slide>
 
       <hooper-pagination slot="hooper-addons"></hooper-pagination>
@@ -95,6 +81,7 @@ export default {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap');
   slide{
     background-size:100% 100%;
 
@@ -130,9 +117,14 @@ export default {
     left:0;
     width:100%;
     height: 100%;
-    background: rgba(0,0,0,0.4);
+    background: rgba(24, 19, 19, 0.6);
     z-index: 3;
+    transition: 0.2s ease-in-out;
   }
+  .opacidade:hover{
+    background: rgba(24, 19, 19, 0.5);
+  }
+
   .hooper{
     width: 100%;
     height: 70vh;
@@ -150,29 +142,19 @@ export default {
     flex-direction: column;
   }
   .info p{
+    font-family: 'Montserrat', sans-serif;
     max-width: 700px;
-    font-size: 24px;
+    font-size: 30px;
     text-shadow: 3px 5px 4px 3px rgba(255,255,255,0.7);
   }
   .info a{
-    border:1px solid #fff;
-    text-align: center;
-    padding:7px 50px;
-    background-color:blueviolet;
-    font-weight: lighter;
-    max-width: 200px;
-    border:none;
-    color:#fff;
-    text-decoration: none;
-    border-radius: 7px;
-    box-shadow:20px 5px 5px 4px rgba(0,0,0,0.5);
-    transition: cubic-bezier(0.55, 0.055, 0.675, 0.19) 0.4s;
-    font-size: 24px;
-    border:2px solid rgba(255,255,255,0.7);
-  }
-
-  .info a:hover{
-    background:rgb(110, 6, 119);
+    position: absolute;
+    left: 0;
+    bottom:-50px;
+    width:200px;
+    padding:23px 0px;
+    font-size:17px;
+    box-shadow: 4px 6px 5px 4px rgba(0,0,0,0.4);
   }
 
   @media (max-width:800px){
@@ -187,7 +169,7 @@ export default {
   }
 
   .info p{
-   font-size:18px;
+   font-size:20px;
   }
   }
 </style>

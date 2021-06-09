@@ -13,11 +13,8 @@
 
             <div class="sobre_texto">
 
-               <p>Somos um grupo que densevolvemos esse site com o intuito de facilitar as notícias mais recente sobre o mundo dos games, sendo simples e prático na informação,
-            caso tiver alguma sugestão, comentário ou algo em que podemos melhorar, isso será muito importante para a nossa empresa alcançar melhores resultados, por isso deixe no campo abaixo.</p>
-
-            <button class="btn-roxo">Saber mais</button>
-
+               <p>Nossa empresa foi fundada com a missão de facilitar o acesso sobre as notícias mais recente do mundo dos games, sendo simples e prático na informação,
+            caso tiver alguma sugestão, comentário ou algo em que podemos melhorar, isso será muito importante para a nossa empresa alcançar melhores resultados. Pois sempre buscamos a melhor experiência do nosso leitor.</p>
 
            </div>     
 
@@ -98,7 +95,7 @@
         background-color: rgba(0,0,0,0.6);
         padding:25px;
         border-radius: 20px;
-        box-shadow: 5px 8px 6px 4px rgba(0,0,0,0.6);
+        box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.6);
 
     }
     .botaoColor{
