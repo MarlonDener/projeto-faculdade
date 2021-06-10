@@ -1,6 +1,6 @@
 <template>
   <div id="admin" class="d-flex capa justify-content-center align-items-center">
-    <form @submit.prevent="login" class="teste">
+    <form @submit.prevent="login" class="area-ajuste-form">
       <div class="row d-flex align-items-center flex-column justify-content-center">
         <div>
           <i class="far fa-user ajuste-icone-admin"></i>
@@ -38,9 +38,9 @@ export default {
       window.uid = user ? user.uid : null
       console.log(window.uid)
       if(window.uid){
-        this.$router.push({path: '/FormularioAdmin'})
+        this.$router.push({path: '/FormularioAdmin'}).catch(()=>{})
       }else{
-        this.$router.push({path: '/login'})
+        this.$router.push({path: '/login'}).catch(()=>{})
       }
     })
   },  
@@ -54,11 +54,11 @@ export default {
         
         window.uid = res.user.uid
 
-        this.$router.push({path: '/FormularioAdmin'})
+        this.$router.push({path: '/FormularioAdmin'}).catch(()=>{})
         
         console.log(res)
       }catch(error){
-        alert('Senha incorreta.')
+        alert('Preencha os campos corretamente.')
       }
     },
     voltarHome(){
@@ -100,7 +100,7 @@ export default {
     border: 1px solid #5d0694;
     text-decoration: none;
   }
-  .teste{
+  .area-ajuste-form{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -124,5 +124,20 @@ export default {
   .recuperar-senha:hover{
     cursor: pointer;
     color: #5d0694;
+  }
+  @media(max-width: 1000px){
+    .area-ajuste-form{
+      width: 50%;
+    }
+  }
+  @media(max-width: 600px){
+    #admin{
+      padding: 0px 10px;
+      background-position: center;
+      background-size: cover;
+    }
+    .area-ajuste-form{
+      width: 90%;
+    }
   }
 </style>

@@ -20,7 +20,12 @@
                     <input v-model="dadosNoticias.linkImagem" type="text" class="form-control" placeholder="Cole o link da imagem">
                 </div>  
 
-                <div class="mb-4 area-quill">            
+                <div class="mb-4">
+                    <label for="exampleInputPassword1" class="form-label">Digite o subtitulo da noticia :</label>
+                    <textarea class="form-control" id="exampleInputPassword1" v-model="dadosNoticias.subNoticia"></textarea>
+                </div>                
+
+                <div class="mb-5 area-quill">            
                   <quill-editor
                     :options="editorOption"
                     v-model="dadosNoticias.textoNoticia"
@@ -28,12 +33,7 @@
                   />                            
                 </div>
                 
-                <div class="mb-4">
-                    <label for="exampleInputPassword1" class="form-label">Digite o subtitulo da noticia :</label>
-                    <textarea class="form-control" id="exampleInputPassword1" v-model="dadosNoticias.subNoticia"></textarea>
-                </div>
-
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center mt-3">
                   <button type="submit" class="btn btn-outline-primary" @click.prevent="enviarDados">Cadastrar Notícia</button>
                 </div>
             </form>
@@ -129,6 +129,8 @@ export default {
   }
   .formulario{
     height: 100vh;
+    background-color: #fff;
+    color: #000000;
   }
   .area-quill{
     height: 30vh;

@@ -22,7 +22,7 @@
               <a v-on:click="activeMenu" class="morePadding" href="/">Início</a>
             </li>
             <li>
-              <a v-on:click="activeMenu" class="morePadding" href="#">Sair</a>
+              <a v-on:click="activeMenu" @click="logout" class="morePadding" href="#">Sair</a>
             </li>
           </ul>
         </nav>
