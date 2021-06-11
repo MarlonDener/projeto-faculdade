@@ -6,10 +6,9 @@
               <div class="logo"><img src="/imagens/logot.png" /></div>
               <nav>
                   <ul>
-                      <li><a href="/">Início</a></li>
+                      <li><a href="#mundo_nerd">Mundo nerd</a></li>
                       <li><a href="#noticias">Noticias</a></li>
                       <li><a href="#about">Sobre</a></li>
-                      <li><a href="#ofertas">Ofertas</a></li>
                       <li><a href="#contato">Contato</a></li>
                   </ul>
               </nav>
@@ -20,10 +19,10 @@
 
               <nav>
                   <ul>
-                      <li><a v-on:click="activeMenu" class="morePadding" href="/">Início</a></li>
+                      <li><a v-on:click="activeMenu" href="#mundo_nerd">Mundo nerd</a></li>
                       <li><a v-on:click="activeMenu" href="#noticias">Noticias</a></li>
-                      <li><a v-on:click="activeMenu" class="morePadding" href="#about">Sobre</a></li>
-                      <li><a v-on:click="activeMenu" href="#ofertas">Ofertas</a></li>
+                      <li><a v-on:click="activeMenu" href="#curiosidades">Curiosidades</a></li>
+                      <li><a v-on:click="activeMenu" href="#about">Sobre</a></li>
                       <li><a v-on:click="activeMenu" href="#contato">Contato</a></li>
                   </ul>
               </nav>
@@ -77,75 +76,88 @@ export default {
 
 
 .button-menu{
-  width:50px;
-  height: 50px;
-  background-color: rgba(66, 1, 66, 0.973);
+  width:45px;
+  height: 42px;
+  background-color: rgba(2, 0, 2, 0.973);
   position: fixed;
-  right: 15px;
+  right: 20px;
   top: 15px;
   background-image: url('/imagens/menu.png');
-  background-size: 50% 50%;
+  background-size: 40% 40%;
   background-position: center;
   background-repeat: no-repeat;
   z-index: 500;
   cursor: pointer;
-  box-shadow: 3px 2px 2px 2px rgba(129, 0, 129, 0.123);
+  box-shadow: 5px 6px 7px 8px rgba(10, 0, 10, 0.123);
   transition: all 0.3s ease 0.2s;
   display: none;
-  border:1px solid rgba(255,255,255,0.3);
+}
+.button-menu:hover{
+  transform: scale(1.1);
 }
 .button-menu.active{
-  background-color: rgba(192, 13, 192, 0.973);
+  right: 40px;
+  top: 30px;
+  transform: scale(1.3);
+  background-color: rgb(116, 6, 88);
   background-image: url('/imagens/close.png');
+  border: thin solid rgba(170, 8, 130, 0.5);
 }
 a{text-decoration: none;}
 .mobile_menu{
   display: none;
   position: fixed;
-  right: -70%;
-  width: 50%;
+  width: 100%;
   background-color: #000;
-  height: 60%;
+  height: 100%;
   z-index: 400;
   font-size: 28px;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
 }
 
 .mobile_menu.active{
-  
+  visibility:visible;
   box-shadow: 7px 7px 7px 7px rgba(0, 0, 0,0.5);
-  right: 0;
+  opacity: 1;
 }
-.mobile_menu li {
-  margin:20px auto;
-}
+
 .mobile_menu ul{
-  position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .mobile_menu a{
   text-decoration: none;
-  color:rgb(255, 118, 255);
-  padding:7px 70px;
-  background-color:rgba(0,0,0,0.8);
-  box-shadow:2px 5px 10px 5px rgba(0,0,0,0.5);
-  transition: 0.5s ease-in-out;
-}
-.mobile_menu a:hover{
-  color:rgb(255, 255, 255);
-  background-color: rgb(61, 3, 42);
+  display: block;
   text-decoration: none;
-  opacity: 0.8;
+  font-size: 24px;
+  padding: 15px;;
+  color: #fff;
+  position: relative;
 }
-a.morePadding{
-  padding: 7px 80px;
-}
+  .mobile_menu a::after {
+      content: '';
+      position: absolute;
+      bottom: 0.70rem;
+      left: 45%;
+      width: 0%;
+      height: 0.2rem;
+      background: rgb(192, 23, 214);
+      transition: all 300ms ease-in-out;
+    }
+    .mobile_menu a:hover::after {
+      left: 15%;
+      width: 70%;
+    }
 .desktop_menu{
   display: flex;
   align-items: center;
-  justify-content:space-between;
+  justify-content:space-around;
   height: 72px;
   padding:8px 20px;
   background: rgb(16, 0, 29);
@@ -154,7 +166,6 @@ a.morePadding{
   position: relative;
 }
 .logo img{
-  margin-left: 30px;
   width:140px;
   height: 75px;
 }
@@ -169,18 +180,32 @@ a.morePadding{
   justify-self: center;
 }
 .desktop_menu nav ul a{
-  padding:9px 45px;
-  font-size: 20px;
-  margin:0 5px;
-  color:#fff;
-  background:rgba(3, 0, 3, 0.5);
-  box-shadow: 2px 5px 7px 8px rgba(3, 0, 3, 0.2);
+  margin: 0 10px;
   text-decoration: none;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px 17px;
+  color: #fff;
+  min-width:130px;
+  position: relative;
+  background: rgba(0, 0, 0, 0.288);
 }
-.desktop_menu nav ul a:hover{
-  
-  background:linear-gradient(30deg,rgba(66, 1, 66, 0.973),rgba(0,0,0,0.3),rgba(66, 1, 66, 0.973));
-}
+  .desktop_menu nav ul a::after {
+      content: '';
+      position: absolute;
+      bottom: 0.70rem;
+      left: 45%;
+      width: 0%;
+      height: 0.2rem;
+      background: rgb(192, 23, 214);
+      transition: all 300ms ease-in-out;
+    }
+    .desktop_menu nav ul a:hover::after {
+      left: 15%;
+      width: 70%;
+    }
 
 ul{
   list-style: none;
@@ -199,10 +224,10 @@ ul{
     display: none;
   }
   .mobile_menu{
-    display: block;
+    display: flex;
   }
   .button-menu{
-    display: block;
+    display: flex;
   }
 }
 

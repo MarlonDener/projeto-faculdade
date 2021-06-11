@@ -10,24 +10,7 @@
             <li><a href="/">Inicio</a></li>
             </ul>
           </nav>
-             <div
-        class="button-menu"
-        :class="MenuActive ? 'active' : ''"
-        v-on:click="activeMenu"
-      ></div>
       </div>
-      </div>
-      <div class="mobile_menu" :class="MenuActive ? 'active' : ''">
-        <nav>
-          <ul>
-            <li>
-              <a v-on:click="activeMenu" class="morePadding" href="/">Início</a>
-            </li>
-            <li>
-              <a v-on:click="activeMenu" class="morePadding" href="#">Sair</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
   </div>
@@ -143,6 +126,10 @@ a.morePadding {
   margin-left: 30px;
   width: 140px;
   height: 75px;
+  transition: 0.2s all ease-in-out;
+}
+.logo img:hover{
+  opacity: 0.8;
 }
 .desktop_menu nav ul {
   text-decoration: none;
@@ -155,21 +142,13 @@ a.morePadding {
   justify-self: center;
 }
 .desktop_menu nav ul a {
-  padding: 9px 45px;
+  padding: 15px 45px;
   font-size: 20px;
   margin: 0 5px;
   color: #fff;
   background: rgba(3, 0, 3, 0.5);
   box-shadow: 2px 5px 7px 8px rgba(3, 0, 3, 0.2);
   text-decoration: none;
-}
-.desktop_menu nav ul a:hover {
-  background: linear-gradient(
-    30deg,
-    rgba(66, 1, 66, 0.973),
-    rgba(0, 0, 0, 0.3),
-    rgba(66, 1, 66, 0.973)
-  );
 }
 
 .gamesclub{
@@ -183,26 +162,26 @@ ul {
 }
 
 @media (max-width:900px){
-  .button-menu {
-    display: block;
-  }
-  .inicio{
-    display:none;
+  .desktop_menu nav ul a{
+    font-size: 15px;
   }
 .gamesclub{
     font-family: 'Train One', cursive;
-    font-size: 25px;
+    font-size: 40px;
     position: relative;
-    left: -35px;
     color:#fff;
 }
 .logo img {
   margin-left: 0px;
-  
+
 }
-@media (max-width:550px){
+@media (max-width:650px){
   .gamesclub{
     display: none;
+}
+.logo img{
+  width:100px;
+  height: 70px;
 }
 }
 }

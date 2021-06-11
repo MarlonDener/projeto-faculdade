@@ -1,6 +1,6 @@
 <template>
     <div class="background">
-    <div class="opacity">s</div>
+    <div class="opacity"></div>
     <div class="about" id="about">
 
         <h2 class="titulo">Sobre nós</h2>
@@ -59,7 +59,6 @@
                 color:#fff;
                 font-size: 20px;
                 font-family: Arial, Helvetica, sans-serif;
-                
                 font-weight: lighter;
             }
 
@@ -117,8 +116,17 @@
         width: 100%;
     }
     .imagem{
-        width:100%
+        width:100%;
+        height: 250px;
     }
+       p{  
+                padding:2px 0px;
+                text-align: left;
+                color:#fff;
+                font-size: 17px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: lighter;
+            }
     }
 
     

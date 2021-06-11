@@ -64,19 +64,6 @@
           <i class="far fa-sun"></i>
         </div>
 
-<!--
-    <section class="redes">
-        <div class="coluna-redes">
-          <div v-if="white" style="color:#fff">apareceu</div>
-          <div class="trocar" style="color:#fff;cursor:pointer" @click="changeColor">change</div>
-           <a :href=getUrl><div class="link f" target="_blank"><i class="fab fa-facebook-f"></i></div></a>
-           <a href="https://www.facebook.com/sharer/sharer.php?u=https://ayltoninacio.com.br/blog/botoes-share-redes-sociais-html-puro">
-            <div class="link l"><i class="fab fa-linkedin-in"></i></div></a>
-            <div class="link t"><i class="fab fa-twitter"></i></div>
-        </div>
-    </section>
-
-    -->
     <Footer />
   </div>
 </template>
@@ -169,7 +156,9 @@ export default {
 
 <style scoped>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,900;1,900&display=swap');
-
+.allComponent{
+  overflow-x: hidden;
+}
 h2 { 
     border-bottom: 1px solid #e2e2e2;
     font-family: 'Montserrat', sans-serif;
@@ -181,10 +170,10 @@ h2 {
     margin-top: 60px;
 }
 .darkColor{
-    color: rgb(212, 212, 212);
+    color: rgb(240, 240, 240);
 }
 .whiteColor{
-     color:#3f3f3f;
+     color:#222222;
 }
 .whiteB{
   
@@ -416,7 +405,7 @@ button {
   
 #toggle{
   cursor: pointer;
-  position: fixed;
+  position: absolute;
   display: block;
   left: 10px;
   top:100px;
@@ -432,7 +421,13 @@ button {
 }
 
 .image_more{
-  width:100%;
+  width:40%;
+}
+.text_more{
+  width:60%;
+}
+.image_more img {
+  height: 100px;
 }
 h2 { 
     font-size: 24px;
@@ -442,5 +437,17 @@ h2 {
 }
 
 
+}
+@media (max-width:500px){
+  h2 { 
+    border-bottom: 1px solid #e2e2e2;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+    text-align: center;
+    padding: 0px 0 21px;
+    margin-bottom: 23px;
+    font-weight: bold;
+    margin-top: 60px;
+}
 }
 </style>

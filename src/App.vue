@@ -30,7 +30,9 @@ html::-webkit-scrollbar-track{
 html::-webkit-scrollbar-thumb{
   background: rebeccapurple;
 }
-
+*::selection{
+    background: rgb(150, 81, 219);
+}
 body{
   overflow-x: hidden;
 }
@@ -39,7 +41,7 @@ body{
                   margin:0 auto;
                   font-size: 32px;
                   font-weight: lighter;
-                  padding:30px 0;
+                  padding:40px 0;
                   color:#fff;
                   width: 300px;
                   text-transform: uppercase;
@@ -53,9 +55,30 @@ body{
                 background-color: blueviolet;
                 transition: all ease 0.3s;
             }
-
+            @media(min-width: 600px){
             .titulo:hover::after{
                  width:200px;
+                 }
+            }
+            @media(max-width: 600px) {
+                   .titulo{
+                  font-size: 28px;
+                  padding:25px 0;
+                  width: 80%;
+                  text-align: center;
+                  text-transform: uppercase;
+              }
+
+            .titulo::after{
+              margin: 10px 0px;
+              text-align: center;
+                content: '';
+                display:block;
+                width:100%;
+                height: 2px;
+                background-color: blueviolet;
+                transition: all ease 0.3s;
+            }
             }
 
 

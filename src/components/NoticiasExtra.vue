@@ -11,7 +11,7 @@
           <a href="/noticia/oiQdjMO20wSImtiubwWG">
           <div class="box">
               <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80" alt="">
-              <div class="info">
+              <div class="info" id="mundo_nerd">
                   <h3>01. Vídeo Games</h3>
                   <p><i class="fas fa-quote-left"></i>Vídeo games se tornaram ferramentas para lidar com o isolamento social durante a pandemia<i class="fas fa-quote-right"></i></p>
                   

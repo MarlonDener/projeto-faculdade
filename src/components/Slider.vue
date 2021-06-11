@@ -13,7 +13,8 @@
         <div class="opacidade"></div>
         <div class="info">
            <p>Como jogar Shadow of the Tomb Raider (Guia para iniciantes)</p> 
-           <a href="/noticia/P6v9B95PBFu2ezxGGLws" class="btn-roxo">Clique para ler</a> 
+           <a href="/noticia/P6v9B95PBFu2ezxGGLws" class="btn-roxo">Ler sobre</a>
+         
         </div>
         <img src="/imagens/img13.jpg">
       </div>
@@ -142,8 +143,8 @@ export default {
     flex-direction: column;
   }
   .info p{
-    font-family: 'Montserrat', sans-serif;
-    max-width: 700px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    max-width: 1000px;
     font-size: 30px;
     text-shadow: 3px 5px 4px 3px rgba(255,255,255,0.7);
   }
@@ -159,17 +160,40 @@ export default {
 
   @media (max-width:800px){
     .imagem{
-    height: 70vh;
+    height: 55vh;
      width: 100%;
   }
 
   .hooper{
     width: 100%;
-    height: 70vh;
+    height: 55vh;
   }
 
   .info p{
-   font-size:20px;
+   font-size:22px;
+   max-width: 100%;
+   width: 100%;
   }
+  .info a {
+    display: none;
   }
+      .info a{
+    position: static;
+    left: none;
+    bottom: none;
+    width:200px;
+    padding:23px 0px;
+    font-size:17px;
+    box-shadow: 4px 6px 5px 4px rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+    .info p{
+      display:none;
+    }
+
+  }
+
 </style>

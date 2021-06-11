@@ -1,7 +1,7 @@
 <template>
         <div id="parallax">
             
-        <div class="container h-100" id="ofertas">
+        <div class="container h-100" id="curiosidades">
 
             <div class="elementos">
 
@@ -73,7 +73,7 @@
 
 
     #parallax{
-        height: 80vh;
+        padding:50px 10px;
         width: 100%;
         background-image: url('/imagens/mario.jpg');
         background-repeat: no-repeat;
@@ -178,7 +178,6 @@
     @media (max-width:800px){
   
      #parallax{
-        height:230vh;
         width: 100%;
         background-image: url('/imagens/mario.jpg');
         background-repeat: no-repeat;
@@ -196,6 +195,12 @@
     .card{
         width:73%;
         margin:25px auto;
+    }
+    }
+    @media (max-width:500px){
+    .card{
+        width:98%;
+        margin:15px auto;
     }
     }
 </style>
