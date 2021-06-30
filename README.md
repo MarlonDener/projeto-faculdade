@@ -3,6 +3,7 @@
 Este é um projeto acadêmico que esta sendo desenvolvido utilizando <strong>Vue.js + Firebase</strong>, e se trata de um sistema de notícias sobre o mundo dos jogos.
 <br>
 
+
 <h3>Sessão do site:</h3>
 
 ![image](https://user-images.githubusercontent.com/70349830/121115965-33c9bb00-c7ec-11eb-8ea1-19acda60c218.png)
